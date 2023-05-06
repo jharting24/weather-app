@@ -1,0 +1,75 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: beige;
+    font-size: 120%;
+    background-image: url(https://source.unsplash.com/2000x1000/?landscape)
+}
+
+.card {
+    font-family: 'Raleway', sans-serif;
+    background: #a9a9a9d0;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    padding: 2em;
+    margin: 1em;
+}
+
+.search {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 48px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 1em;
+    border-radius: 18px;
+    background-color: #a9a9a9;
+    color: black;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100% - 50px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp{
+    margin: 0;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.weather.loading{
+    visibility: hidden;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: black;
+    position: absolute;
+    top: 0;
+    
+}
